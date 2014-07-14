@@ -15,6 +15,12 @@ Vim
 ---
 My vim configuration relies on the fantastic [Vundle](https://github.com/gmarik/Vundle.vim) to manage plugins.
 
+Copy the .vimrc file to your home directory or:
+
+`$ ln -s ~/Developer/config_files/.vimrc ~/.vimrc`
+
+Now,
+
 1. Clone vundle: `$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
 2. Now, run vim: `$ vim` (Replace vim with the alias if you use one).
