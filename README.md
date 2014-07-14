@@ -26,6 +26,8 @@ Personally I open the .vimrc with vim instead of just launching vim ( `$ vim ~/.
 4. Run a `:BundleInstall`
 
 5. Relaunch vim, and you're set to go.
+ 
+![vim](https://dl.dropboxusercontent.com/u/23311727/vim.png)
 
 __Note__: This is a cleanup of my previous .vimrc, taking only what I use. There are still a couple of packages I'm experiemeting with and a couple I have to pull in / fully configure.
 
