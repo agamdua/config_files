@@ -11,8 +11,8 @@ To get this repository:
 
 Find instructions for specific confguration below:
 
-### Vim
-
+Vim
+---
 My vim configuration relies on the fantastic [Vundle](https://github.com/gmarik/Vundle.vim) to manage plugins.
 
 1. Clone vundle: `$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
@@ -28,3 +28,7 @@ Personally I open the .vimrc with vim instead of just launching vim ( `$ vim ~/.
 5. Relaunch vim, and you're set to go.
 
 __Note__: This is a cleanup of my previous .vimrc, taking only what I use. There are still a couple of packages I'm experiemeting with and a couple I have to pull in / fully configure.
+
+License
+-------
+MIT License
