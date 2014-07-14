@@ -23,9 +23,7 @@ Now,
 
 1. Clone vundle: `$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
-2. Now, run vim: `$ vim` (Replace vim with the alias if you use one).
-
-Personally I open the .vimrc with vim instead of just launching vim ( `$ vim ~/.vimrc` )
+2. Now, run vim: `$ vim` (Replace vim with the alias if you use one). Personally I open the .vimrc with vim instead of just launching vim ( `$ vim ~/.vimrc` )
 
 3. Quit vim with a ```:q``` and open whatever.
 
