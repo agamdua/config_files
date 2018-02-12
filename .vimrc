@@ -10,15 +10,21 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
+Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'klen/python-mode'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'fatih/vim-go'
+Plugin 'pearofducks/ansible-vim'
+Plugin 'mileszs/ack.vim'  " really for silver searcher
+
 
 " All Plugins must be added before the following line
 call vundle#end()            " required
@@ -59,11 +65,20 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
 
-set t_Co=256
-let g:solarized_termcolors=256
-colorscheme solarized
-set background=dark
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 " Specific file types, defaults above work for python/elixir
 autocmd Filetype html setlocal expandtab ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal expandtab ts=2 sts=2 sw=2
+
+colorscheme solarized
+set background=dark
+
+" =============
+" for Ack -> Ag
+" =============
+
+if executable('ag')
+	let g:ackprg = 'ag --nogroup --nocolor --column'
+endif
